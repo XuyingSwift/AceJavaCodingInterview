@@ -102,5 +102,28 @@ public class BST {
         return this.leaves;
     }
 
+    // Algorithm:
+    /*
+    * 1. Create a recursive function that takes a node and two values n1 and n2,
+    * 2: if the value of the current node is less than n1 and n2, then LCA lies in the right subtree
+    *    call the recursive function for the right subtree
+    * 3: if the value fo the current node is more than n1 and n2, then LCS lies in the left subtree
+    *    call the recursive function for the left subtree
+    * 4: if both the above cases are false then, return the current node as lca
+    * */
+
+    public Node findLowestCommonAncestor(Node currentNode, Node n1, Node n2){
+        if (currentNode == null) {
+            return null;
+        }
+
+        if (currentNode.value > n1.value && currentNode.value > n2.value) {
+            return findLowestCommonAncestor(currentNode.left, n1, n2);
+        }else if (currentNode.value < n1.value && currentNode.value < n2.value) {
+            return findLowestCommonAncestor(currentNode.right, n1, n2);
+        }else {
+            return currentNode;
+        }
+    }
 
 }
