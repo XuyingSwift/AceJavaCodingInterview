@@ -6,7 +6,7 @@ public class GenerateLongestPalindromicString {
 
     public static void main(String[] args) {
         // the definition of
-        String[] s = {"ab", "ba", "bb", "bb", "cc", "cc"};
+        String[] s = {"ab", "ba", "bb", "bb", "cc"};
         findLongest(s);
         System.out.println();
         String[] s1 = {"bb", "bb", "bb", "bb"};
@@ -18,24 +18,9 @@ public class GenerateLongestPalindromicString {
         String[] s3 = {"bb", "bb", "aa", "aa"};
         findLongest(s3);
         //System.out.println(reverse("bbaa"));
-
-
         System.out.println();
-        List<String> h = new ArrayList<>();
-        Set<String> set = new HashSet<>();
-        for (int i =0; i<s.length; i++) {
-            String str = s[i];
-            String r = reverse(str);
-            if (!str.equals(r)) {
-                set.add(s[i]);
-            }else {
-                h.add(s[i]);
-            }
-        }
+        System.out.println(getP(s));
 
-        for (String ss : h) {
-            System.out.println(ss);
-        }
     }
 
     public static void findLongest(String[] s) {
@@ -91,6 +76,46 @@ public class GenerateLongestPalindromicString {
         for (int i = s.length() -1; i>= 0; i--) {
             ans = ans + s.charAt(i);
         }
+        return ans;
+    }
+
+    public static String getP(String[] s){
+        HashMap<String, Integer> map = new HashMap<>();
+        List<String> list = Arrays.asList(s);
+
+        for (String item: list) {
+            if (map.containsKey(item)) {
+                map.put(item, map.get(item) + 1);
+            }else{
+                map.put(item, 1);
+            }
+        }
+
+        List<String> left = new ArrayList<>();
+        List<String> right = new ArrayList<>();
+
+        String middle = "";
+        HashSet<String> set = new HashSet<>(map.keySet());
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            String re = reverse(entry.getKey());
+
+            if (entry.getKey().equals(re) && entry.getValue() == 1) {
+                middle = entry.getKey();
+            }else if (entry.getKey().equals(re) && entry.getValue() > 1) {
+                left.add(entry.getKey());
+                right.add(re);
+            } else if (set.contains(re)) {
+                left.add(entry.getKey());
+                right.add(re);
+                set.remove(entry.getKey());
+                set.remove(re);
+            }
+
+        }
+        String ans = String.join("", left);
+        ans = ans + middle;
+        Collections.reverse(right);
+        ans = ans + String.join("", right);
         return ans;
     }
 
