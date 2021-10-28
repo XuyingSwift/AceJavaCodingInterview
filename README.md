@@ -13,6 +13,7 @@
     - [BST-LCA](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/)
 - ### String (videoes and Links)
     - [construct k palindrome Strings](https://medium.com/@ChYuan/leetcode-1400-construct-k-palindrome-strings-%E5%BF%83%E5%BE%97-medium-70248333a075)
+- ### LinkedList (videoes and Links)
 
 ******************************************************************************************************************************************************************
 # Company
@@ -26,6 +27,10 @@
         - Input: root = [1,2,3,4,5]
         - Output: [[4,5,3],[2],[1]]
         - Explanation: [[3,5,4],[2],[1]] and [[3,4,5],[2],[1]] are also considered correct answers since per each level it does not matter the order on which elements are returned.
+
+# Java 11 exam
+- ### Java Exam (videos and Lectures)
+
 
   
   
