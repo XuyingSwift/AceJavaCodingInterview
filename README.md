@@ -36,8 +36,15 @@
    
 *****************************************************************************************************************************************************************
 # Java 11 exam
-- ### Java Exam (videos and Lectures)
-
+- [Rank array item] | [my solution]()
+- [Chpater14: Generics and Collections]
+    - User Wrapper classes, autoboxing and autounboxing
+    - Create and Use generic classes, methods with diamond notation and wildcards
+    - Describle the collections framework and use key collection interfaces
+    - User comparator and comparable interfaces
+    - create and use convenience method for collections
+    - Java Stream API: use lambda expressions and method references
+    
 
   
   
