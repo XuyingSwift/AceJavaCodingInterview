@@ -17,6 +17,7 @@
     - [construct k palindrome Strings](https://medium.com/@ChYuan/leetcode-1400-construct-k-palindrome-strings-%E5%BF%83%E5%BE%97-medium-70248333a075)
 - ### LinkedList (videoes and Links)
 - ### Graphs(videos and Lectures)
+    - [Intro to graphs](https://www.mathcs.emory.edu/~cheung/Courses/253/Syllabus/Graph/intro.html)
 
 
 ******************************************************************************************************************************************************************
