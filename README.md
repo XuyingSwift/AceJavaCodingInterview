@@ -8,6 +8,7 @@
     - [Maze](https://www.baeldung.com/java-solve-maze#2-implementation)
 - ### Sorting Algorithms(videos and Lectures)
  - [Insertion Sort](https://www.educative.io/edpresso/what-is-insertion-sort-in-java) || [Java Code](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/algorithms/Sorting/InsertionSort.java)
+
 ********************************************************************************************************************************************************************
 # Data Structure
 - ### Binary Search Tree (videos and Lectures)
@@ -15,6 +16,8 @@
 - ### String (videoes and Links)
     - [construct k palindrome Strings](https://medium.com/@ChYuan/leetcode-1400-construct-k-palindrome-strings-%E5%BF%83%E5%BE%97-medium-70248333a075)
 - ### LinkedList (videoes and Links)
+- ### Graphs(videos and Lectures)
+
 
 ******************************************************************************************************************************************************************
 # Company
