@@ -8,6 +8,7 @@
     - [Maze](https://www.baeldung.com/java-solve-maze#2-implementation)
 - ### Sorting Algorithms(videos and Lectures)
  - [Insertion Sort](https://www.educative.io/edpresso/what-is-insertion-sort-in-java) || [Java Code](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/algorithms/Sorting/InsertionSort.java)
+
 ********************************************************************************************************************************************************************
 # Data Structure
 - ### Binary Search Tree (videos and Lectures)
@@ -15,6 +16,9 @@
 - ### String (videoes and Links)
     - [construct k palindrome Strings](https://medium.com/@ChYuan/leetcode-1400-construct-k-palindrome-strings-%E5%BF%83%E5%BE%97-medium-70248333a075)
 - ### LinkedList (videoes and Links)
+- ### Graphs(videos and Lectures)
+    - [Intro to graphs](https://www.mathcs.emory.edu/~cheung/Courses/253/Syllabus/Graph/intro.html)
+
 
 ******************************************************************************************************************************************************************
 # Company
@@ -28,13 +32,25 @@
         - Input: root = [1,2,3,4,5]
         - Output: [[4,5,3],[2],[1]]
         - Explanation: [[3,5,4],[2],[1]] and [[3,4,5],[2],[1]] are also considered correct answers since per each level it does not matter the order on which elements are returned.
+    - [176. Diet Plan Performance] (https://leetcode.com/problems/diet-plan-performance/) | [my solution]()
+    - [572. Subtree of Another Tree] (https://leetcode.com/problems/subtree-of-another-tree) | [my solution]()
 - ### Twilio Interview Leetcode Questions (videos and Lectures)
     - [Reformat Date] (https://leetcode.com/problems/reformat-date/) | [my solution]()
+- ### Salesforce Interview Leetcode Questions (videos and Lectures)
+    - [Rank array item] | [my solution]()
+    -  [Find the Kth occurance of an item] | [my solution]()
    
 *****************************************************************************************************************************************************************
 # Java 11 exam
-- ### Java Exam (videos and Lectures)
-
+- [Rank array item] | [my solution]()
+- [Chpater14: Generics and Collections]
+    - User Wrapper classes, autoboxing and autounboxing
+    - Create and Use generic classes, methods with diamond notation and wildcards
+    - Describle the collections framework and use key collection interfaces
+    - User comparator and comparable interfaces
+    - create and use convenience method for collections
+    - Java Stream API: use lambda expressions and method references
+    
 
   
   
