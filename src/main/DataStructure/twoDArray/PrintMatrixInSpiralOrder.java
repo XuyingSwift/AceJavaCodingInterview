@@ -19,6 +19,11 @@ public class PrintMatrixInSpiralOrder {
         for (var r : matrix) {
             System.out.println(Arrays.toString(r));
         }
+        System.out.println("shifted matrix");
+        int[][] shift = shift(mat);
+        for (var r : shift) {
+            System.out.println(Arrays.toString(r));
+        }
     }
 
     public static void print(int[][] matrix) {
@@ -135,6 +140,67 @@ public class PrintMatrixInSpiralOrder {
             colLeft ++;
         }
         return spiral;
+    }
+
+    public static int[][] shift(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return new int[0][0];
+        }
+        int topRow =0, topBottom = matrix.length -1;
+        int leftCol = 0, rightCol = matrix[0].length -1;
+        int prev = matrix[0][0];
+
+        while (true) {
+            if (topRow > topBottom) {
+                break;
+            }
+            for (int i = leftCol; i<= rightCol; i++) {
+               int temp = matrix[topRow][i];
+               matrix[topRow][i] = prev;
+               prev = temp;
+            }
+            topRow ++;
+
+            if (leftCol > rightCol) {
+                break;
+            }
+
+            for (int i = topRow; i <= topBottom; i++) {
+                int temp = matrix[i][rightCol];
+                matrix[i][rightCol] = prev;
+                prev = temp;
+            }
+            rightCol --;
+
+            if (topRow > topBottom) {
+                break;
+            }
+
+            for (int i = rightCol; i >= leftCol; i--) {
+                int temp = matrix[topBottom][i];
+                matrix[topBottom][i] = prev;
+                prev = temp;
+            }
+
+            topBottom --;
+
+            if (leftCol>rightCol) {
+                break;
+            }
+
+            for(int i = topBottom; i>= topRow; i--) {
+                int temp = matrix[i][leftCol];
+                matrix[i][leftCol] = prev;
+                prev = temp;
+            }
+
+            leftCol ++;
+
+        }
+
+        // replace the first element with the prev
+        matrix[0][0] = prev;
+        return matrix;
     }
 
 }
