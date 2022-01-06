@@ -41,4 +41,8 @@ public class LinkedList {
         return sum;
     }
 
+    public Node getHead() {
+        return head;
+    }
+
 }
