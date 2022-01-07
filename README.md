@@ -53,8 +53,8 @@
 *****************************************************************************************************************************************************************
 # 2022 AceJavaCodingInterviewDaily
 - [Jan5th twosum](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan5th.java)
-- [Jan6th addTwoNums LinkedList] (https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan6th.java)
-- [Jan7h reversenum] (https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan7th.java)
+- [Jan6th addTwoNums LinkedList](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan6th.java)
+- [Jan7h reversenum](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan7th.java)
 
 
   
