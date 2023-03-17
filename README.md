@@ -56,6 +56,9 @@
 - [Jan6th addTwoNums LinkedList](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan6th.java)
 - [Jan7h reversenum](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2022/Jan/Jan7th.java)
 
+# 2023 AceJavaCodingInterviewDaily
+- [Mar16th twosum](https://github.com/XuyingSwift/AceJavaCodingInterview/blob/master/src/main/newYear2023/Two_Sum_3_16.java)
+
 
   
   
